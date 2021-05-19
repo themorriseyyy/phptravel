@@ -1,0 +1,117 @@
+from selenium import webdriver
+from selenium.webdriver.support.ui import WebDriverWait
+import time
+from selenium.webdriver.common.action_chains import ActionChains
+driver = webdriver.Chrome(executable_path="D:\Selenium\phptravel\driver\chromedriver.exe")
+
+driver.maximize_window()
+
+driver.get("https://phptravels.com/")
+driver.find_element_by_xpath("//a[contains(text(),'Demo')]").click()
+element = driver.find_element_by_xpath("//a[contains(text(),'Demo')]")
+if element.is_displayed():
+    print ("berhasil masuk ke menu Demo")
+else:
+    print ("tidak berhasil masuk ke menu Demo")
+
+driver.find_element_by_xpath("//a[contains(text(),'Pricing')]").click()
+element = driver.find_element_by_xpath("//a[contains(text(),'Pricing')]")
+if element.is_displayed():
+    print ("berhasil masuk ke menu Pricing")
+else:
+    print ("tidak berhasil masuk ke menu Pricing")
+#features
+driver.find_element_by_xpath("//span[contains(text(),'Features')]").click()
+driver.find_element_by_xpath("//a[contains(text(),'Main Features')]").click()
+
+driver.find_element_by_xpath("//span[contains(text(),'Features')]").click()
+driver.find_element_by_xpath("//a[contains(text(),'Hotels Module')]").click()
+
+driver.find_element_by_xpath("//span[contains(text(),'Features')]").click()
+driver.find_element_by_xpath("//a[contains(text(),'Flights Module')]").click()
+
+driver.find_element_by_xpath("//span[contains(text(),'Features')]").click()
+driver.find_element_by_xpath("//a[contains(text(),'Tours Module')]").click()
+time.sleep(2)
+driver.find_element_by_xpath("//span[contains(text(),'Features')]").click()
+driver.find_element_by_xpath("//a[contains(text(),'Cars Module')]").click()
+time.sleep(2)
+driver.find_element_by_xpath("//span[contains(text(),'Features')]").click()
+driver.find_element_by_xpath("//a[contains(text(),'Offers Module')]").click()
+time.sleep(2)
+driver.find_element_by_xpath("//span[contains(text(),'Features')]").click()
+driver.find_element_by_xpath("//a[contains(text(),'Blog Module')]").click()
+time.sleep(2)
+driver.find_element_by_xpath("//span[contains(text(),'Features')]").click()
+driver.find_element_by_xpath("//a[contains(text(),'Newsletter Module')]").click()
+time.sleep(2)
+driver.find_element_by_xpath("//span[contains(text(),'Features')]").click()
+driver.find_element_by_xpath("//a[contains(text(),'CMS Module')]").click()
+time.sleep(2)
+#product
+driver.find_element_by_xpath("//span[contains(text(),'Product')]").click()
+driver.find_element_by_xpath("//header/div[1]/nav[1]/div[2]/div[1]/a[1]").click()
+time.sleep(2)
+
+driver.find_element_by_xpath("//span[contains(text(),'Product')]").click()
+driver.find_element_by_xpath("//header/div[1]/nav[1]/div[2]/div[1]/a[2]").click()
+time.sleep(2)
+
+driver.find_element_by_xpath("//span[contains(text(),'Product')]").click()
+driver.find_element_by_xpath("//header/div[1]/nav[1]/div[2]/div[1]/a[3]").click()
+time.sleep(2)
+
+driver.find_element_by_xpath("//span[contains(text(),'Product')]").click()
+driver.find_element_by_xpath("//a[contains(text(),'API XMLIntegration')]").click()
+time.sleep(2)
+
+driver.find_element_by_xpath("//span[contains(text(),'Product')]").click()
+driver.find_element_by_xpath("//a[contains(text(),'Suppliers list')]").click()
+time.sleep(2)
+
+driver.find_element_by_xpath("//span[contains(text(),'Product')]").click()
+driver.find_element_by_xpath("//header/div[1]/nav[1]/div[2]/div[1]/a[6]").click()
+time.sleep(2)
+
+driver.find_element_by_xpath("//span[contains(text(),'Product')]").click()
+driver.find_element_by_xpath("//header/div[1]/nav[1]/div[2]/div[1]/a[7]").click()
+time.sleep(2)
+
+driver.find_element_by_xpath("//span[contains(text(),'Product')]").click()
+driver.find_element_by_xpath("//header/div[1]/nav[1]/div[2]/div[1]/a[8]").click()
+time.sleep(2)
+
+driver.find_element_by_xpath("//span[contains(text(),'Product')]").click()
+driver.find_element_by_xpath("//header/div[1]/nav[1]/div[2]/div[1]/a[9]").click()
+time.sleep(2)
+
+driver.find_element_by_xpath("//span[contains(text(),'Product')]").click()
+driver.find_element_by_xpath("//a[contains(text(),'Mobiles App')]").click()
+time.sleep(2)
+
+driver.find_element_by_xpath("//span[contains(text(),'Product')]").click()
+driver.find_element_by_xpath("//header/div[1]/nav[1]/div[2]/div[1]/a[11]").click()
+time.sleep(2)
+
+driver.find_element_by_xpath("//span[contains(text(),'Product')]").click()
+driver.find_element_by_xpath("//header/div[1]/nav[1]/div[2]/div[1]/a[12]").click()
+time.sleep(2)
+
+driver.find_element_by_xpath("//span[contains(text(),'Product')]").click()
+driver.find_element_by_xpath("//a[contains(text(),'How to Start')]").click()
+time.sleep(2)
+
+#integration
+driver.find_element_by_xpath("//header/div[1]/nav[1]/a[3]").click()
+
+#docs
+driver.find_element_by_xpath("//a[contains(text(),'Docs')]").click()
+
+#blog
+driver.find_element_by_xpath("//header/div[1]/nav[1]/a[5]").click()
+
+
+
+
+
+
